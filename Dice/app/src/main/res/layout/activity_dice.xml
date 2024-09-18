@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#008000"
+        android:orientation="vertical"
+        tools:context=".DiceActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="인생은 주사위 한 방에 가는 거 아니겠습니까" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/dice1"
+                android:src="@drawable/dice_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/dice2"
+                android:src="@drawable/dice_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/diceStartBtn"
+            android:text="도박 ㄱㄱ"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp" />
+
+    </LinearLayout>
+
+</layout>
